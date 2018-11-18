@@ -3,7 +3,8 @@ Tarea 3 Desarrollo Web en Entorno Servidor
 Vamos a crear una aplicación de un tablón de anuncios dónde los voluntarios de SinObsolescencia podrán publicar los bienes que desean intercambiar con otros voluntarios o vender al público en general.
 Así, los anuncios podrán ser privados o públicos, por lo que dependiendo si accedemos como un usuario registrado de la ONG o como invitado veremos todos o algunos anuncios.
 Dicha aplicación constará de las siguientes páginas:
-    • index.php: Ofrecerá 3 opciones:
+   
+   • index.php: Ofrecerá 3 opciones:
         ◦ Autentificarse mediante usuario y contraseña: Se comprobará que dicho usuario esté dado de alta en la base de datos (en la tabla anunciantes). Si el usuario y contraseña son correctos se creará una sesión y se tendrá acceso  a la página voluntario.php.
 
 Las contraseñas están almacenadas en la base de datos usando hashing de una sola vía mediante la función crypt, por lo tanto para comprobar si una contraseña es correcta se deberá usar la función password_verify.
